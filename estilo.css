@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color:white;
+    margin: 0;
+    padding: 0;
+    font-size: 52px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-align: left;
+}
+.section{
+    width: 100%;
+    background-image: url(prueba.png);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.texto{
+    display: block;
+    color:white;
+    width: 50%;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 21px;
+    margin-top: 23px;
+}
+.imgmenu{
+   width: 100%;
+}
+/*celular*/
+@media only screen and (max-width: 1099px){
+    .container{
+        width: 100%;
+        max-width: 270px;
+    }
+    .texto{
+        width: 100%;
+        text-align: center;
+    }
+    h1{
+        font-size: 48px;
+        text-align: center;
+    }
+    .pleca{
+        display: none;
+    }
+}
