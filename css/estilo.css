@@ -1,0 +1,514 @@
+/* ESTILOS GENERALES */
+html{
+    scroll-behavior: smooth;
+}
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(211, 32, 32, 0);
+}
+h1{
+    font-size: 40px;
+    line-height: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+.p-margen{
+    margin-top: 23px;
+}
+/* INICIO */
+#inicio{
+    width: 100%;
+    background-image: url(imgcss/fondoinicio.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.inicio-contenedor{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 380px;
+    
+}
+.imgi{
+    display: block;
+    height: 140px;
+}
+/* CONCEPTO */
+#concepto{
+    position: relative;
+    background-image: url(imgcss/sitioweb-diseño.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+.cuadro-fondo{
+    position: absolute;
+    background: rgb(223, 32, 133);
+    width: 30%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.concepto-contenedor{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.imagen-mole, .info-concepto{
+    width: 50%;
+}
+.imagen-mole{
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+}
+.img-concepto{
+    width: 100%;
+}
+.h1-concepto{
+    color:rgb(223, 32, 133);
+}
+/*COCINA*/
+#cocina{
+    width: 100%;
+    background-image: url(imgcss/prueba.png);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+.h1-cocina{
+    color: white;
+}
+.p-cocina{
+    display: block;
+    width: 50%;
+    color: white;
+    font-weight: 600;
+}
+/*MENU*/
+#menu{
+    width: 100%;
+    background: rgb(131, 65, 143);
+    padding-top: 100px;
+}
+.contenedor-menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.infomenu, .menuenlaces{
+    width: 50%;
+}
+.h1-menu{
+    color: white;
+}
+.p-menu{
+    color: white;
+}
+.menuenlaces a{
+    display: block;
+    background: #C4C4C4;
+    text-decoration: none;
+    color: rgb(131, 65, 143);
+}
+.boton-menu{
+    float: right;
+    width: 100%;
+    max-width: 354px;
+    padding: 15px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+}
+.margen-boton-c{
+    margin-top: 15px;
+}
+.margen-boton-d{
+    margin-top: 30px;
+}
+.contenedor-galeriamenu{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 207px;
+    grid-gap: 35px;
+    padding-top: 40px;
+}
+.objeto-galeria{
+    background: white;
+}
+.foto-galeria {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+.foto-galeria:hover {
+    box-shadow: 0px 0px 25px 21px rgba(108, 39, 120, 1);
+}
+.contenedor-fondo-galeria {
+    background: rgb(131, 65, 143);
+    padding-bottom: 100px;
+}
+
+/*MODAL*/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(131, 65, 143, 0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .7s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.overlay .slidershow {
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(131, 65, 143);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.slidershow img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;    
+    border: none;
+}
+.btn_cerrar {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    transition: all .9s ease;
+    cursor: pointer;
+}
+.btn_cerrar:hover{
+    color: rgb(223, 32, 133);
+    box-shadow: 0px 0px 10px 5px rgba(223, 32, 134, 0.521);
+}
+.botones{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+}
+.atras{
+    left: 15px;
+}
+.adelante{
+    right: 15px;
+}
+.fa-solid {
+    pointer-events: none;
+}
+/*SUCURSALES */
+#sucursales{
+    height: 700px;
+}
+/*RESTAURANTES */
+#restaurantes{
+    width: 100%;
+    background-image: url(imgcss/fondorestaurante.png);
+    /*background-size: 100vw 100vh;*/
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+.h1-restaurantes{
+    color: white;
+    text-align: center;
+}
+.p-restaurantes{
+    color: white;
+    text-align: center;
+}
+.rlogos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 118px auto;
+}
+.logot{
+    width: 335px;
+    height: 95px;
+}
+.logosm{
+    width: 225px;
+    height: 124px;
+}
+.logox{
+    width: 268px;
+    height: 90px;
+}
+/* CONTACTO */
+#contacto{
+    position: relative;
+    width: 100%;
+    background-image: url(imgcss/sitioweb-diseño.png);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+}
+.contacto-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.tcont{
+    width: 50%;
+}
+.formcont{
+    width: 50%;
+    padding: 0 40px;
+}
+.h1-contacto{
+    color: rgb(223, 32, 133);
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+input{
+    display: block;
+}
+.finput, textarea{
+    background: none;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+    padding: 14px 0;
+    border: none;
+    border-bottom: solid 4px rgb(223, 32, 133);
+    margin-top: 15px;
+    outline: rgb(131, 65, 143);
+}
+textarea{
+    width: 100%;
+    max-width: 420px;
+    min-width: 420px;
+    min-height: 120px;
+    max-height: 200px;
+    padding: 0;
+}
+.finput:focus{
+    border-bottom: solid 4px rgb(131, 65, 143);
+}
+textarea:focus{
+    border-bottom: solid 4px rgb(131, 65, 143);
+}
+#boton{
+    width: 100px;
+    margin-top: 34px;
+    border: solid 4px rgb(223, 32, 133);
+    padding: 7px 0;
+    cursor: pointer;
+    color: rgb(223, 32, 133);
+    transition: all 0.8s;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+#boton:hover{
+    background: rgb(131, 65, 143);
+    border: solid 4px rgb(131, 65, 143);
+    color: white
+}
+.cintillo{
+    position: absolute;
+    width: 68px;
+    bottom:0;
+    right: 0;
+    top:0;
+    overflow: hidden;
+}
+.talavera{
+    width: 68px;
+    height: 68px;
+}
+/* FOOTER */
+footer{
+    background: rgb(223, 32, 133);
+}
+.flexible{
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+}
+.flogo{
+    display: block;
+    height: 65px;
+}
+.bloqueuno{
+    background: rgba(255, 255, 0, 0);
+}
+.bloquedos{
+    margin-left: 20px;
+}
+.p-footer{
+    color: white;
+}
+footer .f-iconos a{
+    color: white;
+}
+/*Dispositivos Moviles*/
+@media only screen and (max-width: 1156px){
+    /* ESTILOS GENERALES */
+    .contenedor{
+        width: 270px;
+    }
+    p{
+        text-align: center;
+    }
+    h1{
+        font-size: 27px;
+        line-height: 38px;
+        text-align: center;
+    }
+    /* CONCEPTO */
+    .imagen-mole, .info-concepto{
+        width: 100%;
+    }
+    .imagen-mole{
+        padding-right: 0px;
+    }
+    .info-concepto{
+        margin-top: 23px;
+    }
+    .cuadro-fondo{
+        display: none;
+    }
+    /* COCINA */
+    .p-cocina{
+        width: 100%;
+    }
+    /* MENU */
+    .infomenu, .menuenlaces{
+        width: 100%;
+    }
+    .menuenlaces{
+        margin-top: 20px;
+    }
+    .contenedor-galeriamenu{
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 180px;
+        grid-gap: 20px;
+    }
+    .boton-menu {
+        font-size: 18px;
+    }
+    /*SUCURSALES */
+    /* RESTAURANRES */
+    .rlogos{
+        display: block;
+        margin: 30px 0;
+    }
+    .logot{
+        width: 100%;
+        height: auto;
+        padding: 25px 0;
+    }
+    .logosm{
+        margin: 0 auto;
+        height: auto;
+        padding: 25px 0;
+    }
+    .logox{
+        width: 260px;
+        height: auto;
+        margin: 0 auto;
+        padding: 25px 0;
+    }
+    /* CONTACTO */
+    .contacto-contenedor{
+        display: block;
+    }
+    .tcont, .formcont{
+        width: 100%;
+        padding: 0;
+    }
+    textarea{
+        max-width: 270px;
+        min-width: 270px;
+    }
+    /* FOOTER */
+    .flexible{
+        display: block;
+        padding: 20px 0;
+    }
+    .bloquedos{
+        width: 100%;
+        margin: 0;
+        margin-top: 10px;
+    }
+    .flogo{
+        margin: 0 auto;
+    }
+    .f-iconos{
+        display: flex;
+        margin: 5px auto;
+        width: 60px;
+        justify-content: space-between;
+    }
+    .contacto-contenedor{
+        display: block;
+    }
+    .cintillo{
+        display: none;
+    }
+}
