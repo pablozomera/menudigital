@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let imagenes = [
         {img: 'img/galeria/nogada.jpg'},
         {img: 'img/galeria/mole_virrey.JPG'},
-        {img: 'img/galeria/cemita.JPG'},
+        {img: 'img/galeria/cemita.jpg'},
         {img: 'img/galeria/tampiquena.JPG'},
         {img: 'img/galeria/platon.JPG'},
         {img: 'img/galeria/tres_moles.JPG'},
